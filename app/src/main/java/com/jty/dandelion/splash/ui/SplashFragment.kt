@@ -47,7 +47,7 @@ class SplashFragment : Fragment() {
                 findNavController().navigate(R.id.registerFragment)
             }
         })
-        viewModel.checkLogin()
+        viewModel.checkLogin(activity)
     }
 
 
