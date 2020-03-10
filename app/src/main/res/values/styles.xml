@@ -6,8 +6,32 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">true</item>
         <item name="windowNoTitle">true</item>
         <item name="android:windowNoTitle">true</item>
     </style>
 
+    <style name="text_lab" parent="Widget.Design.TextInputLayout">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColorHint">#8c8c8c</item>
+        <item name="android:colorAccent">#6495ED</item>
+        <item name="android:colorControlNormal">#000</item>
+        <item name="colorControlActivated">#6495ED</item>
+    </style>
+
+    <style name="fragmentTheme" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="BottomDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/dialog_bottom_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_bottom_exit</item>
+    </style>
+
+    <style name="DialogStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    
 </resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+            android:id="@+id/item_news"
+            android:icon="@mipmap/ic_message"
+            android:enabled="true"
+            android:title="@string/message"
+            app:showAsAction="ifRoom"/>
+    <item
+            android:id="@+id/item_peoples"
+            android:icon="@mipmap/ic_peoples"
+            android:enabled="true"
+            android:title="@string/friend"
+            app:showAsAction="ifRoom"/>
+    <item
+            android:id="@+id/item_data"
+            android:icon="@mipmap/ic_data"
+            android:enabled="true"
+            android:title="@string/data"
+            app:showAsAction="ifRoom"/>
+    <item
+            android:id="@+id/item_mine"
+            android:icon="@mipmap/ic_mine"
+            android:enabled="true"
+            android:title="@string/mine"
+            app:showAsAction="ifRoom"/>
+</menu>

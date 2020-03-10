@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@drawable/date_picker_dialog_background"
+              android:gravity="bottom"
+             tools:context=".dialog.DatePickerFragmentDialog">
+
+    <DatePicker
+            android:id="@+id/date_picker"
+            android:layout_width="match_parent"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false"
+            android:layout_height="wrap_content"/>
+
+</LinearLayout>

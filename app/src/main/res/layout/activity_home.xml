@@ -6,7 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".main_activity.MainActivity">
+        tools:context=".home.ui.HomeActivity">
 
 
     <fragment
@@ -18,7 +18,6 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:defaultNavHost="true"
-            app:navGraph="@navigation/nav_graph"/>
+            app:defaultNavHost="false"/>
 
 </LinearLayout>
