@@ -11,10 +11,9 @@
             app:titleMarginTop="20dp"
             app:menu="@menu/message_menu"
             app:title="@string/message"/>
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/news_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
 
-    <Button
-            android:id="@+id/bt_test"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="1111"/>
 </LinearLayout>

@@ -11,4 +11,34 @@
             app:titleMarginTop="20dp"
             app:menu="@menu/message_menu"
             app:title="@string/friend"/>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/peoples_rl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        <TextView
+                android:id="@+id/bar_item_tv"
+                android:text="A"
+                android:background="@drawable/side_index_bar_item"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="25dp"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:layout_height="wrap_content"/>
+        <com.jty.dandelion.customview.SideIndexBar
+                android:id="@+id/side_index_bar"
+                android:layout_alignParentEnd="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="40dp"
+                android:paddingBottom="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+    </RelativeLayout>
 </LinearLayout>

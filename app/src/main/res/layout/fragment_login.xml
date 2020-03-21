@@ -17,18 +17,18 @@
             android:text="@string/welcome"/>
 
     <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/til_email"
+            android:id="@+id/til_account"
             android:layout_width="match_parent"
-            android:labelFor="@id/aet_email"
+            android:labelFor="@id/aet_account"
             android:theme="@style/text_lab"
             android:layout_height="wrap_content"
             app:errorEnabled="true">
         <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/aet_email"
+                android:id="@+id/aet_account"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:singleLine="true"
-                android:hint="@string/please_input_email"/>
+                android:hint="@string/please_input_account"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -53,7 +53,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="#1E90FF"
-            android:gravity="right"
+            android:gravity="end"
             android:text="@string/go_to_register"/>
     <TextView
             android:id="@+id/tv_login"

@@ -5,12 +5,12 @@ import android.app.Application
 class DandelionApplication : Application(){
 
     companion object{
-        val baseUrl = ""
+
+      fun getAccount(): Account{
+          return Account()
+      }
 
     }
 
-    override fun onCreate() {
-        super.onCreate()
 
-    }
 }

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+    <com.jty.dandelion.customview.CircleImageView
+            android:id="@+id/peoples_rl_civ"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="15dp"
+            android:src="@mipmap/ic_splash"/>
+
+    <TextView
+            android:id="@+id/peoples_name_tv"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/peoples_rl_civ"
+            android:textSize="15sp"
+            android:paddingStart="20dp"
+            android:textColor="#000000"
+            android:text="介天运"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    <View
+            android:id="@+id/peoples_rl_item_line"
+            android:layout_toEndOf="@id/peoples_rl_civ"
+            android:layout_alignBottom="@id/peoples_rl_civ"
+            android:layout_width="match_parent"
+            android:background="#000"
+            android:gravity="bottom"
+            android:layout_height="1px"/>
+</RelativeLayout>

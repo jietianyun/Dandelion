@@ -4,16 +4,16 @@ import android.app.Activity
 import android.content.Context.MODE_PRIVATE
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.jty.dandelion.application.DandelionApplication
 
 class SplashViewModel : ViewModel() {
 
-    val loginStatus : MutableLiveData<Boolean> by lazy {
-        MutableLiveData<Boolean>()
+    val loginStatus : MutableLiveData<String> by lazy {
+        MutableLiveData<String>()
     }
 
 
     fun checkLogin(activity: Activity?){
-        val sp = activity?.getSharedPreferences("login_status",MODE_PRIVATE)
-        loginStatus.value = sp?.getBoolean("isLogin", false) ?: false
+        loginStatus.value = DandelionApplication.getAccount().getAccountId(activity)
     }
 }

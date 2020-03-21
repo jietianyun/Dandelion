@@ -3,6 +3,8 @@ package com.jty.dandelion.splash.ui
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import android.text.TextUtils
+import android.util.Log
 import androidx.lifecycle.Observer
 import com.jty.dandelion.R
 import com.jty.dandelion.home.ui.HomeActivity
@@ -13,6 +15,8 @@ import com.jty.expand.hideStatusBar
 import com.jty.expand.startActivity
 
 class SplashActivity : AppCompatActivity() {
+
+    private val TAG = "SplashActivity"
 
     private val handler by lazy {
         Handler()
@@ -28,7 +32,8 @@ class SplashActivity : AppCompatActivity() {
     private fun checkLogin(){
         val viewModel = getViewModel<SplashViewModel>()
         viewModel.loginStatus.observe(this, Observer {
-            if (it) {
+            Log.d(TAG, it)
+            if (!TextUtils.isEmpty(it)) {
                 startActivity<HomeActivity>()
                 finish()
             }else{
